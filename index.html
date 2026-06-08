@@ -315,7 +315,9 @@
 
       setLoading(true);
 
-      const prompt = `You are a helpful icebreaker assistant for project managers. For each name below, produce one short, interesting piece of trivia (2–3 sentences max). It can be about the name's origin and meaning, a famous historical or pop-culture figure who shared the name, an interesting cultural connection, or a fun linguistic fact. Keep it warm, conversational, and suitable for a workplace team meeting. Vary the type of trivia across names.
+      const prompt = `You are a helpful icebreaker assistant for project managers. For each name below, produce one short, interesting piece of trivia (2–3 sentences max). Keep it warm, conversational, and suitable for a workplace team meeting.
+
+Vary the trivia widely across the list — draw from categories like: a famous person (athlete, musician, actor, scientist, politician, historical figure) who shares the name; the name's popularity or cultural reach across different countries; a notable or surprising fact about a well-known person with that name; or an unexpected connection the name has to pop culture, sports, or current events. Only very occasionally use the name's etymological origin — it should be the rare exception, not the default. Aim for variety, surprise, and conversation-starting energy across the full list.
 
 Return ONLY a valid JSON array, no markdown, no backticks, no preamble. Format:
 [{"name": "Sarah", "trivia": "..."}]
